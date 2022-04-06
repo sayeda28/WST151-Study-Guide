@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background-color: rgb(97, 19, 26);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav {
+  width: 80%;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 30px 20px;
+  display: block;
+}
+header a:hover {
+  background-color: rgb(97, 19, 26);
+}
+
+main {
+  background-color: rgb(234, 210, 151);
+}
+main > h2 {
+  text-align: center;
+  padding: 20px;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 21px;
+  row-gap: 20px;
+  border-top: 3px solid;
+  margin: bottom 21px;
+}
+section h3 {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  grid-column: 1/-1;
+}
+.card {
+  background-color: rgb(97, 19, 26);
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+.card:hover {
+  background-color: black;
+  transition: all 1s;
+}
+.card:hover h4 {
+  top: -100px;
+}
+.card:hover p {
+  top: 0;
+}
+.card h4 {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.card p {
+  position: relative;
+  top: 2000px;
+  transition: all 0.5s;
+  pointer-events: none;
+  color: #fff;
+}
